@@ -1,0 +1,273 @@
+@charset "UTF-8";
+      /* Background Image*/
+html {
+  /* Text in white, back-up background color as black if img doesn't load correctly, Image will cover,center and no repeating */
+    height: 100%;
+    margin: 0;
+    background-image: url("../img/bg.jpg");
+    background-color: black;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Gaegu', cursive;
+    font-family: 'Mali', cursive;
+    font-family: 'Tillana', cursive;
+    /* Font Short hand - font style , font-weight , fontsize/line-hegith */
+    font: normal 400 18px/1.5 Gaegu, Mali, Tillana;
+}
+
+/* Logo centering
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+*/
+
+/* Navigation Bar */
+nav{
+	width: 510px;
+	margin: 0 auto;
+}
+nav ul{
+	height: 50px;
+	list-style-type: none;
+	padding: 0 30px;
+	margin: 0;
+}
+nav li{
+	height: 50px;
+	padding: 0;
+	margin: 0 5px 0 0;
+	float: left;
+}
+nav li a{
+	height: 15px;
+	display: block;
+	padding: 10px 15px 20px 15px;
+	text-decoration: none;
+	background-color: lightgreen;
+}
+nav li a:link{
+	color: #333;
+}
+nav li a:visited{
+	color: #333;
+}
+nav li a:hover{
+	color: white;
+	background-color: black;
+}
+nav li a:active{
+	background-color: green;
+	color: #F30;
+}
+
+#page1 li:nth-of-type(1) a,
+#page2 li:nth-of-type(2) a,
+#page3 li:nth-of-type(3) a,
+#page4 li:nth-of-type(4) a,
+#page5 li:nth-of-type(5) a,
+
+h1 {
+	line-height: 1;
+	font-size: 24px;
+	font-weight: 400;
+  color: red;
+  display: block;
+  font-family: 'PT Serif', serif;
+}
+
+/* Text Align  */
+div.center {
+    text-align: center;
+}
+
+div.left {
+    text-align: left;
+}
+
+div.right {
+    text-align: right;
+}
+
+/* Container */
+div.container {
+    width: 1250px;
+    margin: auto;
+    border-radius: 1px;
+    padding: 20px;
+    background-color: skyblue;
+    font-family: 'PT Serif', serif;
+}
+
+footer.container {
+    width: 1250px;
+    margin: auto;
+    border-radius: 1px;
+    padding: 20px;
+    background-color: grey;
+    font-family: 'PT Serif', serif;
+}
+
+/* Modified italics and bold */
+strong {
+  font-weight: 400;
+  font-style: italic;
+  color: white;
+}
+
+em {
+  font-weight: bold;
+  color: white;
+}
+
+/* paragraphs text modification */
+p.text {
+  line-height: 1.6;
+  text-align: left;
+  text-indent: 45px;
+  color: grey;
+}
+
+/* Index page titles and questions */
+div.questionNtext h2 {
+  color: darkblue;
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
+}
+
+div.questionNtext h3 {
+  color: red;
+  text-transform: capitalize;
+  text-align: left;
+  font-style: italic;
+}
+
+div.questionNtext p {
+  line-height: 1.6;
+  text-align: left;
+  text-indent: 45px;
+  color: grey;
+}
+/* Contact page list stores */
+#seller {
+		padding-left: 12%;
+	}
+#seller ol li {
+  list-style-type: none;
+  color:white;
+}
+
+#seller h3 {
+  padding-left: 0px;
+  text-align: center;
+  text-transform: capitalize;
+  color: red;
+  font-size: 2em;
+}
+#loct {
+  position: relative;
+  left: 650px;
+  bottom: 400px;
+}
+
+/* About page motto and about text */
+div.titles h1 {
+  text-align: center;
+  color: darkblue;
+  text-transform: capitalize;
+}
+#missionT {
+  color: red;
+  text-transform: uppercase;
+  font-size: 2.0em;
+  font-style: normal;
+  text-align: center;
+
+}
+p.about {
+  color: black;
+  font-style: normal;
+  text-align: center;
+  margin-left: 30px;
+
+}
+
+p.mission {
+  color: green;
+  font-style: normal;
+  text-align: center;
+  margin-left: 30px;
+}
+/* Shop page sales events */
+
+div.sales h1{
+  color: red;
+  text-transform: capitalize;
+  font-size: 2.5em;
+  font-style: italic;
+  text-align: center;
+}
+div.sales h2{
+  color: red;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  font-style: italic;
+  text-align: center;
+}
+
+div.sales p{
+  color: red;
+  text-transform: capitalize;
+  font-size: 1.0em;
+  font-style: italic;
+  text-align: center;
+}
+
+div.personalized h3{
+  color: white;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+div.comments h1{
+  color: white;
+  text-transform: none;
+  font-style: normal;
+  font-size: 1em;
+}
+/* resource page */
+
+div.photos {
+  margin: 100px;
+  float: none;
+  width: 200px;
+  height: auto;
+}
+
+div.photos img {
+  width: 100%;
+  height: auto;
+}
+
+#desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.photos h3{
+  padding: 15px;
+  text-align: left;
+}
+
+div.sharing {
+  color: black;
+  font-style: normal;
+  margin-left: 30px;
+  text-align: center;
+}

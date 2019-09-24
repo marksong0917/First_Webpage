@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<!-- Full Page Background -->
+<html id="bg" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ze Ze's Tableware | Home</title>
+    <!-- Style Sheets -->
+    <link href="css/normalize.css" rel="stylesheet" media="all" />
+    <link href="css/style.css" rel="stylesheet" media="all" />
+    <!-- Better view for smaller devices -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Gaegu"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mali"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Tillana"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="page4">
+    <header>
+      <!-- Header includes the logo, company name, and onsite Navgation bar -->
+      <div class="center">
+        <h1><img src="img/logo1.png" alt="logo" /> Ze Ze's Tableware</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html" title="Go to the home page">Home</a></li>
+          <li><a href="about.html" title="Go to the about page">About</a></li>
+          <li>
+            <a href="resource.html" title="Go to the resource page">Resource</a>
+          </li>
+          <li><a href="shop.html" title="Go to the Shop page">Shop</a></li>
+          <li>
+            <a href="contact.html" title="Go to the contact page">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!-- Shopping form  -->
+      <div class="container">
+        <!-- sale events  -->
+        <div class="sales">
+          <h1>This week is Chrismas sales event !</h1>
+          <h2>
+            During the Chrismas sales event we'll design your own personalized
+            tableware set for only $199 USD + Tax and we'll even pay for
+            shipping !
+          </h2>
+          <p>
+            Chrismas sales event ends this sunday! So hurry and order your own
+            personalized tableware set perfect for all occasions
+          </p>
+          <p></p>
+        </div>
+
+        <h2>Order Information</h2>
+        <!-- Personal Information section  -->
+        <form id="edit_payment_info" method="get" action="process-form.php">
+          <input type="hidden" name="form_sent" value="1" />
+          <fieldset>
+            <legend>Personal Informations</legend>
+            <div>
+              <label for="fn">First Name:</label>
+              <input
+                id="fn"
+                type="text"
+                name="fn"
+                size="15"
+                maxlength="15"
+                required
+                placeholder="First Name"
+              />
+            </div>
+            <div>
+              <label for="ln">Last Name:</label>
+              <input
+                id="ln"
+                type="text"
+                name="ln"
+                size="15"
+                maxlength="15"
+                required
+                placeholder="Last Name"
+              />
+            </div>
+            <div>
+              <label for="address">Address:</label>
+              <input
+                id="address"
+                type="text"
+                name="address"
+                size="25"
+                maxlength="25"
+                required
+                placeholder="Address"
+              />
+            </div>
+            <div>
+              <label for="postCode">Postal Code:</label>
+              <input
+                id="postCode"
+                type="text"
+                name="postCode"
+                size="10"
+                maxlength="10"
+                required
+                placeholder="Postal Code"
+              />
+            </div>
+            <div>
+              <label for="phone">Phone:</label>
+              <input
+                id="phone"
+                type="tel"
+                name="phone"
+                size="10"
+                maxlength="10"
+                required
+                placeholder="Phone Number"
+              />
+            </div>
+          </fieldset>
+          <fieldset>
+            <!-- Type of tableware set  -->
+            <legend>Type Selection</legend>
+            <br />
+            <input type="radio" name="Ttype" id="Ps" value="Ps" />
+            <label for="Ps">Plate Sets</label>
+            <img
+              src="img/plate1.jpg"
+              alt="plate set"
+              height="250"
+              width="200"
+            />
+            <img
+              src="img/plate2.jpg"
+              alt="plate2 set"
+              height="250"
+              width="300"
+            />
+            <img
+              src="img/plate3.jpg"
+              alt="plate3 set"
+              height="250"
+              width="300"
+            />
+            <br />
+            <input type="radio" name="Ttype" id="Ts" value="Ts" />
+            <label for="Ts">Tea Sets</label>
+            <img src="img/set1.jpg" alt="Tea set" height="250" width="300" />
+            <img src="img/set2.jpg" alt="Tea2 set" height="250" width="300" />
+            <br />
+            <input type="radio" name="Ttype" id="Ds" value="Ds" />
+            <label for="Ds"
+              >Dinner Sets<img src="img/set3.jpg" alt="Dinner Set"
+            /></label>
+          </fieldset>
+          <fieldset>
+            <!-- set personalization  -->
+            <legend>Personalization Selection</legend>
+            <div class="personalized">
+              <h3>Number of Sets:</h3>
+              <input type="radio" name="numSet[]" id="1" value="1" />
+              <label for="1">1</label>
+              <input type="radio" name="numSet[]" id="2" value="2" />
+              <label for="2">2</label>
+              <input type="radio" name="numSet[]" id="3" value="3" />
+              <label for="3">3</label>
+            </div>
+            <div class="comments">
+              <h1>
+                <label for="comments">Tell us what design to put on it!</label>
+              </h1>
+              <br />
+              <textarea name="comments" id="comments" rows="10" cols="70">
+input your comment here...</textarea
+              >
+            </div>
+          </fieldset>
+          <fieldset>
+            <!-- Paymment detail -->
+            <legend>Payment Details</legend>
+            <input type="radio" name="cctype" id="amex" value="amex" />
+            <label for="amex"
+              ><img src="img/amex.gif" alt="American Express" /> American
+              Express</label
+            >
+            <input type="radio" name="cctype" id="mc" value="mc" />
+            <label for="mc"
+              ><img src="img/mc.gif" alt="MasterCard" /> MasterCard</label
+            >
+            <input type="radio" name="cctype" id="visa" value="visa" />
+            <label for="visa"><img src="img/visa.gif" alt="Visa" /> VISA</label>
+            <div>
+              <label for="ccnumber">Credit Card Number</label>
+              <input
+                id="ccnumber"
+                type="text"
+                name="ccnumber"
+                value=""
+                required
+              />
+            </div>
+            <div>
+              <label for="ccexpireyear">Expiration Year</label>
+              <select id="ccexpireyear" name="ccexpireyear">
+                <option value="choose">choose…</option>
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+              </select>
+            </div>
+            <div>
+              <label for="ccexpiremonth">Expiration Month</label>
+              <select name="ccexpiremonth" id="ccexpiremonth">
+                <option value="choose">choose…</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+            </div>
+          </fieldset>
+          <br />
+          <input type="submit" value="Submit" />
+          <input type="reset" value="reset" />
+        </form>
+      </div>
+    </main>
+    <footer class="container">
+      <!-- Legal Information -->
+      <div class="center">
+        <p>
+          <small>
+            Copyright &copy; 2018 Ze Ze's Tableware. Designed and maintained by
+            Mark Song. All rights reserved.</small
+          >
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
